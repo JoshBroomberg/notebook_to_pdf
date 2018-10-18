@@ -1,0 +1,2 @@
+alias colab="docker run -p 8888:8888 -v "$PWD":/home/jovyan/work joshbroomberg/clean-jupyter:latest start-notebook.sh --NotebookApp.allow_origin='https://colab.research.google.com'"
+alias notebook_pdf='docker run --rm -v $PWD:/home/jovyan/work joshbroomberg/clean-jupyter:latest start.sh jupyter nbconvert ./work/*.ipynb --to pdf' #--template latex_template.tplx"
